@@ -1,0 +1,14 @@
+@media screen and (min-width: 765px){
+    .cards-experiencias{
+        display: grid; 
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media screen and (max-width: 765px){
+    .cards-experiencias{
+        display: flex;
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
