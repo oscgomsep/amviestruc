@@ -200,6 +200,9 @@ header.masthead .site-heading {
   header.masthead .site-heading {
     padding: 200px 0;
   }
+  .menuinicio{
+    padding: 30px;
+  }
 }
 
 header.masthead .page-heading,

@@ -1,0 +1,130 @@
+
+
+
+@media only screen and (max-width: 600px)
+{
+    #grillacuerpo {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 20% 20% 20% 20%;
+    }
+    .containerCuerpoTitulo{
+
+        margin-top: 5%; 
+        margin-bottom: 5%; 
+
+    }
+}
+
+
+/* layout para computadores */
+
+@media only screen and  (min-width: 601px)
+{
+
+
+    
+    /* animación */
+    @keyframes movimgprin {
+        0% {transform: translate(100%);}
+        100% {transform: translate(0%);}
+    }
+    @keyframes movdiv {
+        from {
+            position: relative;
+            left: -150%;
+        }
+        to{
+            position: relative;
+            left: 30px;
+        }
+    }
+    @keyframes movimg {
+        0% {height: 0px;}
+        100% {height: 350px;}
+    }
+
+
+    /* imagen de fondo */
+    .imgpri{
+        position: absolute;
+        top: 10%;
+        left: 10px;
+        width: 100%;
+
+        height: auto;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        background-image: url("../img/reficar.jpg");
+        background-position: center;
+        background-position: top;
+        background-repeat: no-repeat;
+        animation-name: movimgprin;
+        animation-duration: 4s;
+
+    }
+    .imgpri > div{
+        position: relative;
+        top: 20%;
+        left: 30px;
+        width: 280px;
+        height: 350px;
+        overflow: hidden;
+        border-style: solid;
+        border-color: royalblue;
+        border-width: 2px;
+        animation-name: movdiv;
+        animation-duration: 4s;
+        background-color: royalblue;
+    }
+
+
+ 
+
+    /* ejercicio de la transformación de la imagen */
+    .transformacion{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .imgtrans{
+        height: 300px;
+    }
+    /* imagen transformadao */
+    #muro img:hover{
+        transform: scaleY(2);
+    }
+
+    /* codigo embebido tomado de bootstrap */
+    .codigoboot{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 4;
+        grid-row-end: 5;        
+    }
+
+        /* codigo embebido tomado de bootstrap */
+    .codigocarta{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 5;
+        grid-row-end: 6;        
+    }
+
+    .codigoforma{
+        padding-top: 20px;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 6;
+        grid-row-end: 7;        
+    }
+
+   
+}
+
