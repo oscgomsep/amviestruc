@@ -1,5 +1,5 @@
-<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
-<script>
+
+
 var current = 0;
 var imagenes = new Array();
  
@@ -46,4 +46,3 @@ $(document).ready(function() {
         return false;
     }); 
  });
-</script>

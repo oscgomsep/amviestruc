@@ -5,10 +5,11 @@
 
 #content {
     margin-bottom: 25px;
+    width: 1200px;
 }
 #carrusel {
     float:left;
-    width:600px;
+    width:1030px;
     overflow:hidden;
     height:203px;
     position:relative;
@@ -53,6 +54,8 @@
 
 .product {
     border:#CCCCCC 1px solid;
+    padding-top: 30px;
+
 }
 
 
