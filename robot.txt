@@ -1,0 +1,3 @@
+Sitemap: https://amviestruc1.000webhostapp.com/sitemap.xml
+User-agent: Googlebot
+Allow: /contactos/
