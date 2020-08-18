@@ -1,3 +1,7 @@
+/* generales */
+p{
+    text-align: justify;
+}
 
 .letrasInicio{
     background-color: rgba(90, 120, 211, 0.6);
@@ -7,9 +11,12 @@
     margin-bottom: 25px;
     width: 1200px;
 }
+/* pagina principal */
+
+
 #carrusel {
     float:left;
-    width:1030px;
+    width:100%;
     overflow:hidden;
     height:203px;
     position:relative;
@@ -34,7 +41,7 @@
 }
 
 .carrusel {
-    width:4000px;
+    width:100%;
     left:0px;
     position:absolute;
     z-index:0;
@@ -46,18 +53,179 @@
     margin-right: 5px;
     width: 195px;
     text-align:center;
+
 }
 
 .carrusel img {
     cursor:pointer;
+    vertical-align: middle;
+    
 }
 
 .product {
     border:#CCCCCC 1px solid;
-    padding-top: 30px;
+}
+
+.showcase{
+    display: block;
+    box-sizing: border-box;
 
 }
 
+.container-fluid{
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.mb-0,
+.my-0 {
+  margin-bottom: 0 !important;
+}
+
+.lead{
+    font-size: 1.25rem;
+}
+
+
+
+.grilla{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 16% 16% 16% 16% 16% 16% 16%;
+}
+
+.beneficio1{
+    text-align: center;
+    font-weight: bold ;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    padding-bottom: 40px;
+}
+.beneficio2{
+    text-align: center;
+    font-weight: bold ;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    padding-bottom: 40px;
+}
+.beneficio3{
+    text-align: center;
+    font-weight: bold ;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    padding-bottom: 40px;
+}
+.beneficio4{
+    text-align: center;
+    font-weight: bold ;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    padding-bottom: 40px;
+}
+.beneficio5{
+    text-align: center;
+    font-weight: bold ;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    padding-bottom: 40px;
+}
+.beneficio6{
+    text-align: center;
+    font-weight: bold ;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    padding-bottom: 40px;
+}
+.beneficio7{
+    text-align: center;
+    font-weight: bold ;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    padding-bottom: 40px;
+}
+.beneficio8{
+    text-align: center;
+    font-weight: bold ;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    padding-bottom: 40px;
+}
+.beneficio9{
+    text-align: center;
+    font-weight: bold ;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 5;
+    grid-row-end: 6;
+    padding-bottom: 40px;
+}
+.beneficio10{
+    text-align: center;
+    font-weight: bold ;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 5;
+    grid-row-end: 6;
+    padding-bottom: 40px;
+}
+.beneficio11{
+    text-align: center;
+    font-weight: bold ;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 6;
+    grid-row-end: 7;
+    padding-bottom: 40px;
+}
+.beneficio12{
+    text-align: center;
+    font-weight: bold ;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 6;
+    grid-row-end: 7;
+    padding-bottom: 40px;
+}
+.beneficio13{
+    text-align: center;
+    font-weight: bold ;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 7;
+    grid-row-end: 8;
+    padding-bottom: 40px;
+}
+
+.imagen-responsiva{
+    display:inline-flex;
+    max-width: 100%;
+    height: auto;
+    margin: 20px;
+    
+  }
+
+#wapp{
+    position: fixed;
+    right: 20px;
+    bottom: 100px;
+}
 
 @media only screen and (max-width: 600px)
 {
@@ -77,111 +245,8 @@
 
 /* layout para computadores */
 
-@media only screen and  (min-width: 601px)
+@media only screen and  (min-width: 768px)
 {
-
-
-    
-    /* animación */
-    @keyframes movimgprin {
-        0% {transform: translate(100%);}
-        100% {transform: translate(0%);}
-    }
-    @keyframes movdiv {
-        from {
-            position: relative;
-            left: -150%;
-        }
-        to{
-            position: relative;
-            left: 30px;
-        }
-    }
-    @keyframes movimg {
-        0% {height: 0px;}
-        100% {height: 350px;}
-    }
-
-
-    /* imagen de fondo */
-    .imgpri{
-        position: absolute;
-        top: 10%;
-        left: 10px;
-        width: 100%;
-
-        height: auto;
-        grid-column-start: 2;
-        grid-column-end: 3;
-        grid-row-start: 1;
-        grid-row-end: 2;
-        background-image: url("../img/reficar.jpg");
-        background-position: center;
-        background-position: top;
-        background-repeat: no-repeat;
-        animation-name: movimgprin;
-        animation-duration: 4s;
-
-    }
-    .imgpri > div{
-        position: relative;
-        top: 20%;
-        left: 30px;
-        width: 280px;
-        height: 350px;
-        overflow: hidden;
-        border-style: solid;
-        border-color: royalblue;
-        border-width: 2px;
-        animation-name: movdiv;
-        animation-duration: 4s;
-        background-color: royalblue;
-    }
-
-
- 
-
-    /* ejercicio de la transformación de la imagen */
-    .transformacion{
-        grid-column-start: 2;
-        grid-column-end: 3;
-        grid-row-start: 3;
-        grid-row-end: 4;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .imgtrans{
-        height: 300px;
-    }
-    /* imagen transformadao */
-    #muro img:hover{
-        transform: scaleY(2);
-    }
-
-    /* codigo embebido tomado de bootstrap */
-    .codigoboot{
-        grid-column-start: 2;
-        grid-column-end: 3;
-        grid-row-start: 4;
-        grid-row-end: 5;        
-    }
-
-        /* codigo embebido tomado de bootstrap */
-    .codigocarta{
-        grid-column-start: 2;
-        grid-column-end: 3;
-        grid-row-start: 5;
-        grid-row-end: 6;        
-    }
-
-    .codigoforma{
-        padding-top: 20px;
-        grid-column-start: 2;
-        grid-column-end: 3;
-        grid-row-start: 6;
-        grid-row-end: 7;        
-    }
 
    
 }
