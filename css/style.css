@@ -16,7 +16,7 @@ p{
 
 #carrusel {
     float:left;
-    width:100%;
+    width: 600px;
     overflow:hidden;
     height:203px;
     position:relative;
@@ -41,7 +41,7 @@ p{
 }
 
 .carrusel {
-    width:100%;
+    width: 4000px;
     left:0px;
     position:absolute;
     z-index:0;
@@ -52,15 +52,21 @@ p{
     height: 203px;
     margin-right: 5px;
     width: 195px;
-    text-align:center;
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .carrusel img {
     cursor:pointer;
-    vertical-align: middle;
-    
+   
 }
+
+.product h6{
+    position: absolute;
+    bottom: 10px;
+
+} 
 
 .product {
     border:#CCCCCC 1px solid;

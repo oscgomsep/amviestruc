@@ -5,7 +5,7 @@ var current = 0;
 var imagenes = new Array();
  
 $(document).ready(function() {
-    var numImages = 4;
+    var numImages = 7;
     if (numImages <= 3) {
         $('.right-arrow').css('display', 'none');
         $('.left-arrow').css('display', 'none');
