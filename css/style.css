@@ -248,12 +248,26 @@ p{
     }
 }
 
+/* pagina destacados */
+@media (min-width: 768px) {
+    header.masthead {
+      padding-top: 12rem;
+      padding-bottom: 12rem;
+    }
+    header.masthead h1 {
+      font-size: 3rem;
+    }
+  }
+
+.showcase .showcase-text {
+  padding: 3rem;
+}
+
+.showcase .showcase-img {
+  min-height: 30rem;
+  background-size: cover;
+}
 
 /* layout para computadores */
 
-@media only screen and  (min-width: 768px)
-{
-
-   
-}
 
