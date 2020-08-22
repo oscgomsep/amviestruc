@@ -101,6 +101,10 @@ p{
     grid-template-rows: 16% 16% 16% 16% 16% 16% 16%;
 }
 
+.grilla p{
+    text-align: center;
+}
+
 .beneficio1{
     text-align: center;
     font-weight: bold ;
