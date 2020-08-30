@@ -5,14 +5,39 @@ p{
 
 .letrasInicio{
     background-color: rgba(42, 73, 163, 0.6);
+    text-align: center;
 }
 
 #content {
-    margin-bottom: 25px;
-    width: 1200px;
+    display: flex;
+    justify-content: center;
+    /* width: 1200px; */
 }
 /* pagina principal */
 
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+  z-index:100;
+}
+.float:hover {
+	text-decoration: none;
+	color: #25d366;
+  background-color:#fff;
+}
+
+.my-float{
+	margin-top:16px;
+}
 
 #carrusel {
     float:left;
@@ -231,11 +256,6 @@ p{
     
   }
 
-#wapp{
-    position: fixed;
-    right: 20px;
-    bottom: 100px;
-}
 
 @media only screen and (max-width: 600px)
 {
