@@ -3,6 +3,10 @@
         display: grid; 
         grid-template-columns: 1fr 1fr;
     }
+    #inicioLogo{
+        height: 60px;
+        width: auto;
+    }
 }
 @media screen and (max-width: 765px){
     .cards-experiencias{
@@ -10,5 +14,9 @@
         flex-direction: column;
         margin-left: auto;
         margin-right: auto;
+    }
+    #inicioLogo{
+        height: 4em;
+        width: auto;
     }
 }
