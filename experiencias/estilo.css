@@ -4,7 +4,7 @@
         grid-template-columns: 1fr 1fr;
     }
     #inicioLogo{
-        height: 60px;
+        height: 4em;
         width: auto;
     }
 }
@@ -16,7 +16,7 @@
         margin-right: auto;
     }
     #inicioLogo{
-        height: 4em;
+        height: 3em;
         width: auto;
     }
 }
